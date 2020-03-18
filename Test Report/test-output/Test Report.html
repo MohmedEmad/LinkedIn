@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\mai.fathy\AppData\Local\Temp\2\testng-eclipse--1596298726\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 5 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test1n@-domain.com)">Check_for_invalid_emails(test1n@-domain.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.logInTest" hash-for-method="Check_for_mandatory_fields">Check_for_mandatory_fields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="UserCanRegisterSuccssfully(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667)">UserCanRegisterSuccssfully(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ProfileTest" hash-for-method="Verfiy_User_can_add_work_experience(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg)">Verfiy_User_can_add_work_experience(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ForgotPasswordTest" hash-for-method="Verfiy_the_system_keep_the_email(mf069886.test@gmail.com, m1a2i3)">Verfiy_the_system_keep_the_email(mf069886.test@gmail.com, m1a2i3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test3@@)">Check_for_invalid_emails(test3@@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test1l@domain..com)">Check_for_invalid_emails(test1l@domain..com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test1@111.222.333.44444)">Check_for_invalid_emails(test1@111.222.333.44444)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test1…)">Check_for_invalid_emails(test1…)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_emails(test1.email.domain.com)">Check_for_invalid_emails(test1.email.domain.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_password(1d23, Password must be 6 characters or more)">Check_for_invalid_password(1d23, Password must be 6 characters or more)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_for_invalid_password(aaaaaa, Please enter a more secure password.)">Check_for_invalid_password(aaaaaa, Please enter a more secure password.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_mandatory_fields(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name)">Check_mandatory_fields(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_mandatory_fields(user1, test, Test@123.com, , Please enter your password)">Check_mandatory_fields(user1, test, Test@123.com, , Please enter your password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_mandatory_fields(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name)">Check_mandatory_fields(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.RegistrationTest" hash-for-method="Check_mandatory_fields(user1, test, , sd4e7rr4d1, Please enter your email address)">Check_mandatory_fields(user1, test, , sd4e7rr4d1, Please enter your email address)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ForgotPasswordTest" hash-for-method="Verfiy_the_system_display_MSG_For_invalid(mai.gmail.com)">Verfiy_the_system_display_MSG_For_invalid(mai.gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ForgotPasswordTest" hash-for-method="Verfiy_the_system_display_MSG_For_invalid()">Verfiy_the_system_display_MSG_For_invalid()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ForgotPasswordTest" hash-for-method="Verfiy_the_system_send_email_For_user(mf069886.test@gmail.com, m1a2i3)">Verfiy_the_system_send_email_For_user(mf069886.test@gmail.com, m1a2i3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ForgotPasswordTest" hash-for-method="Verfiy_the_user_can_open_forgetpassPage">Verfiy_the_user_can_open_forgetpassPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.logInTest" hash-for-method="login_with_invalid_data(test@gmail.com, 123456.0)">login_with_invalid_data(test@gmail.com, 123456.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.logInTest" hash-for-method="login_with_valid_data(mf069886.test@gmail.com, m1a2i3)">login_with_valid_data(mf069886.test@gmail.com, m1a2i3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="linkedinTestCases.ProfileTest" hash-for-method="login_with_valid_data(mf069886.test@gmail.com, m1a2i3)">login_with_valid_data(mf069886.test@gmail.com, m1a2i3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">linkedinTestCases.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test1n@-domain.com)">
+                  </a> <!-- Check_for_invalid_emails(test1n@-domain.com) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test1n@-domain.com)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter a valid email address] but found [Password must be 6 characters or more]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at linkedinTestCases.RegistrationTest.Check_for_invalid_emails(RegistrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanRegisterSuccssfully(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667)">
+                  </a> <!-- UserCanRegisterSuccssfully(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667) -->
+                  <span class="method-name">UserCanRegisterSuccssfully</span>
+                  <span class="parameters">(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;cp-challenge-form-page1&quot;]/fieldset/ul/li[1]/div/label[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;MAI-FATHY&apos;, ip: &apos;10.10.106.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//*[@id=&quot;cp-challenge-form-page1&quot;]/fieldset/ul/li[1]/div/label[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at linkedinPages.HomePage.EnterSecurityData(HomePage.java:42)
+	at linkedinTestCases.RegistrationTest.UserCanRegisterSuccssfully(RegistrationTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">linkedinTestCases.logInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_mandatory_fields">
+                  </a> <!-- Check_for_mandatory_fields -->
+                  <span class="method-name">Check_for_mandatory_fields</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter a valid email address] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at linkedinTestCases.logInTest.Check_for_mandatory_fields(logInTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">linkedinTestCases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_User_can_add_work_experience(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg)">
+                  </a> <!-- Verfiy_User_can_add_work_experience(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg) -->
+                  <span class="method-name">Verfiy_User_can_add_work_experience</span>
+                  <span class="parameters">(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;pe-form-footer__actions pe-form-footer__actions--treasury-edit&apos;]//div//button[@data-control-name=&apos;apply&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;MAI-FATHY&apos;, ip: &apos;10.10.106.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//div[@class=&apos;pe-form-footer__actions pe-form-footer__actions--treasury-edit&apos;]//div//button[@data-control-name=&apos;apply&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at linkedinPages.ProfilePage.add_Work_experience(ProfilePage.java:42)
+	at linkedinTestCases.ProfileTest.Verfiy_User_can_add_work_experience(ProfileTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">linkedinTestCases.ForgotPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_the_system_keep_the_email(mf069886.test@gmail.com, m1a2i3)">
+                  </a> <!-- Verfiy_the_system_keep_the_email(mf069886.test@gmail.com, m1a2i3) -->
+                  <span class="method-name">Verfiy_the_system_keep_the_email</span>
+                  <span class="parameters">(mf069886.test@gmail.com, m1a2i3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [mf069886.test@gmail.com] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at linkedinTestCases.ForgotPasswordTest.Verfiy_the_system_keep_the_email(ForgotPasswordTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">linkedinTestCases.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test3@@)">
+                  </a> <!-- Check_for_invalid_emails(test3@@) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test3@@)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test1l@domain..com)">
+                  </a> <!-- Check_for_invalid_emails(test1l@domain..com) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test1l@domain..com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test1@111.222.333.44444)">
+                  </a> <!-- Check_for_invalid_emails(test1@111.222.333.44444) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test1@111.222.333.44444)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test1…)">
+                  </a> <!-- Check_for_invalid_emails(test1…) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test1…)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_emails(test1.email.domain.com)">
+                  </a> <!-- Check_for_invalid_emails(test1.email.domain.com) -->
+                  <span class="method-name">Check_for_invalid_emails</span>
+                  <span class="parameters">(test1.email.domain.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_password(1d23, Password must be 6 characters or more)">
+                  </a> <!-- Check_for_invalid_password(1d23, Password must be 6 characters or more) -->
+                  <span class="method-name">Check_for_invalid_password</span>
+                  <span class="parameters">(1d23, Password must be 6 characters or more)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_for_invalid_password(aaaaaa, Please enter a more secure password.)">
+                  </a> <!-- Check_for_invalid_password(aaaaaa, Please enter a more secure password.) -->
+                  <span class="method-name">Check_for_invalid_password</span>
+                  <span class="parameters">(aaaaaa, Please enter a more secure password.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_mandatory_fields(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name)">
+                  </a> <!-- Check_mandatory_fields(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name) -->
+                  <span class="method-name">Check_mandatory_fields</span>
+                  <span class="parameters">(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_mandatory_fields(user1, test, Test@123.com, , Please enter your password)">
+                  </a> <!-- Check_mandatory_fields(user1, test, Test@123.com, , Please enter your password) -->
+                  <span class="method-name">Check_mandatory_fields</span>
+                  <span class="parameters">(user1, test, Test@123.com, , Please enter your password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_mandatory_fields(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name)">
+                  </a> <!-- Check_mandatory_fields(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name) -->
+                  <span class="method-name">Check_mandatory_fields</span>
+                  <span class="parameters">(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_mandatory_fields(user1, test, , sd4e7rr4d1, Please enter your email address)">
+                  </a> <!-- Check_mandatory_fields(user1, test, , sd4e7rr4d1, Please enter your email address) -->
+                  <span class="method-name">Check_mandatory_fields</span>
+                  <span class="parameters">(user1, test, , sd4e7rr4d1, Please enter your email address)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">linkedinTestCases.logInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_with_invalid_data(test@gmail.com, 123456.0)">
+                  </a> <!-- login_with_invalid_data(test@gmail.com, 123456.0) -->
+                  <span class="method-name">login_with_invalid_data</span>
+                  <span class="parameters">(test@gmail.com, 123456.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_with_valid_data(mf069886.test@gmail.com, m1a2i3)">
+                  </a> <!-- login_with_valid_data(mf069886.test@gmail.com, m1a2i3) -->
+                  <span class="method-name">login_with_valid_data</span>
+                  <span class="parameters">(mf069886.test@gmail.com, m1a2i3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">linkedinTestCases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_with_valid_data(mf069886.test@gmail.com, m1a2i3)">
+                  </a> <!-- login_with_valid_data(mf069886.test@gmail.com, m1a2i3) -->
+                  <span class="method-name">login_with_valid_data</span>
+                  <span class="parameters">(mf069886.test@gmail.com, m1a2i3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">linkedinTestCases.ForgotPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_the_system_display_MSG_For_invalid(mai.gmail.com)">
+                  </a> <!-- Verfiy_the_system_display_MSG_For_invalid(mai.gmail.com) -->
+                  <span class="method-name">Verfiy_the_system_display_MSG_For_invalid</span>
+                  <span class="parameters">(mai.gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_the_system_display_MSG_For_invalid()">
+                  </a> <!-- Verfiy_the_system_display_MSG_For_invalid() -->
+                  <span class="method-name">Verfiy_the_system_display_MSG_For_invalid</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_the_system_send_email_For_user(mf069886.test@gmail.com, m1a2i3)">
+                  </a> <!-- Verfiy_the_system_send_email_For_user(mf069886.test@gmail.com, m1a2i3) -->
+                  <span class="method-name">Verfiy_the_system_send_email_For_user</span>
+                  <span class="parameters">(mf069886.test@gmail.com, m1a2i3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verfiy_the_user_can_open_forgetpassPage">
+                  </a> <!-- Verfiy_the_user_can_open_forgetpassPage -->
+                  <span class="method-name">Verfiy_the_user_can_open_forgetpassPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mai.fathy\AppData\Local\Temp\2\testng-eclipse--1596298726\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;linkedinTestCases.TestBase&quot;/&gt;
+      &lt;class name=&quot;linkedinTestCases.logInTest&quot;/&gt;
+      &lt;class name=&quot;linkedinTestCases.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;linkedinTestCases.ProfileTest&quot;/&gt;
+      &lt;class name=&quot;linkedinTestCases.ForgotPasswordTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Verfiy_User_can_add_work_experience')
+data.setCell(0, 2, 'linkedinTestCases.ProfileTest')
+data.setCell(0, 3, 22219);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login_with_valid_data')
+data.setCell(1, 2, 'linkedinTestCases.logInTest')
+data.setCell(1, 3, 12925);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login_with_valid_data')
+data.setCell(2, 2, 'linkedinTestCases.ProfileTest')
+data.setCell(2, 3, 8928);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Verfiy_the_system_send_email_For_user')
+data.setCell(3, 2, 'linkedinTestCases.ForgotPasswordTest')
+data.setCell(3, 3, 6035);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Verfiy_the_system_display_MSG_For_invalid')
+data.setCell(4, 2, 'linkedinTestCases.ForgotPasswordTest')
+data.setCell(4, 3, 5221);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Verfiy_the_system_display_MSG_For_invalid')
+data.setCell(5, 2, 'linkedinTestCases.ForgotPasswordTest')
+data.setCell(5, 3, 5199);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UserCanRegisterSuccssfully')
+data.setCell(6, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(6, 3, 3882);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Check_for_invalid_emails')
+data.setCell(7, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(7, 3, 2966);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Check_for_invalid_emails')
+data.setCell(8, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(8, 3, 2961);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Check_for_invalid_emails')
+data.setCell(9, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(9, 3, 2961);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Check_for_invalid_password')
+data.setCell(10, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(10, 3, 2929);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Check_for_invalid_emails')
+data.setCell(11, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(11, 3, 2928);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Check_for_invalid_emails')
+data.setCell(12, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(12, 3, 2898);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Check_for_invalid_password')
+data.setCell(13, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(13, 3, 2877);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Check_for_invalid_emails')
+data.setCell(14, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(14, 3, 2875);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Check_mandatory_fields')
+data.setCell(15, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(15, 3, 2874);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Check_mandatory_fields')
+data.setCell(16, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(16, 3, 2862);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Check_mandatory_fields')
+data.setCell(17, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(17, 3, 2844);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Check_mandatory_fields')
+data.setCell(18, 2, 'linkedinTestCases.RegistrationTest')
+data.setCell(18, 3, 2803);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Verfiy_the_system_keep_the_email')
+data.setCell(19, 2, 'linkedinTestCases.ForgotPasswordTest')
+data.setCell(19, 3, 2653);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'login_with_invalid_data')
+data.setCell(20, 2, 'linkedinTestCases.logInTest')
+data.setCell(20, 3, 2072);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Verfiy_the_user_can_open_forgetpassPage')
+data.setCell(21, 2, 'linkedinTestCases.ForgotPasswordTest')
+data.setCell(21, 3, 1888);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Check_for_mandatory_fields')
+data.setCell(22, 2, 'linkedinTestCases.logInTest')
+data.setCell(22, 3, 1360);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">linkedinTestCases.RegistrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Open_the_web_page</span>
+                <br/>
+                <span class="ignored-method-name">Close_the_Site</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">linkedinTestCases.logInTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Open_the_web_page</span>
+                <br/>
+                <span class="ignored-method-name">Close_the_Site</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">linkedinTestCases.ProfileTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Open_the_web_page</span>
+                <br/>
+                <span class="ignored-method-name">Close_the_Site</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">linkedinTestCases.ForgotPasswordTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Open_the_web_page</span>
+                <br/>
+                <span class="ignored-method-name">Close_the_Site</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.TestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Open_the_web_page</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.logInTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Check_for_mandatory_fields</span>
+                <span class="method-start">7191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login_with_invalid_data(test@gmail.com, 123456.0)</span>
+                <span class="method-start">9117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_emails(test3@@)</span>
+                <span class="method-start">11247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_emails(test1…)</span>
+                <span class="method-start">14214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Check_for_invalid_emails(test1n@-domain.com)</span>
+                <span class="method-start">17090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_emails(test1@111.222.333.44444)</span>
+                <span class="method-start">20052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_emails(test1l@domain..com)</span>
+                <span class="method-start">23014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_emails(test1.email.domain.com)</span>
+                <span class="method-start">25943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_password(1d23, Password must be 6 characters or more)</span>
+                <span class="method-start">28880 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_for_invalid_password(aaaaaa, Please enter a more secure password.)</span>
+                <span class="method-start">31810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_mandatory_fields(, user1, Test@123.com, sd4e7rr4d1, Please enter your first name)</span>
+                <span class="method-start">34689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_mandatory_fields(user1, , Test@123.com, sd4e7rr4d1, Please enter your last name)</span>
+                <span class="method-start">37534 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_mandatory_fields(user1, test, , sd4e7rr4d1, Please enter your email address)</span>
+                <span class="method-start">40397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_mandatory_fields(user1, test, Test@123.com, , Please enter your password)</span>
+                <span class="method-start">43272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanRegisterSuccssfully(marwa, fathy, m.f0145@gmail.com, 1.2345678E7, eg, 01126184667)</span>
+                <span class="method-start">46106 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.ForgotPasswordTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verfiy_the_system_display_MSG_For_invalid()</span>
+                <span class="method-start">49995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verfiy_the_system_display_MSG_For_invalid(mai.gmail.com)</span>
+                <span class="method-start">55217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verfiy_the_system_keep_the_email(mf069886.test@gmail.com, m1a2i3)</span>
+                <span class="method-start">60438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verfiy_the_system_send_email_For_user(mf069886.test@gmail.com, m1a2i3)</span>
+                <span class="method-start">63119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verfiy_the_user_can_open_forgetpassPage</span>
+                <span class="method-start">69154 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.logInTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login_with_valid_data(mf069886.test@gmail.com, m1a2i3)</span>
+                <span class="method-start">71065 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login_with_valid_data(mf069886.test@gmail.com, m1a2i3)</span>
+                <span class="method-start">84013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verfiy_User_can_add_work_experience(Title for test, Company name for test, companylocation for test, 4, 2017, avatar-blank.jpg)</span>
+                <span class="method-start">92960 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">linkedinTestCases.TestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">Close_the_Site</span>
+                <span class="method-start">115180 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

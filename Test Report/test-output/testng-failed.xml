@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="linkedinTestCases.RegistrationTest">
+        <methods>
+          <include name="Open_the_web_page"/>
+          <include name="Check_for_invalid_emails" invocation-numbers="2"/>
+          <include name="UserCanRegisterSuccssfully" invocation-numbers="0"/>
+          <include name="Close_the_Site"/>
+        </methods>
+      </class> <!-- linkedinTestCases.RegistrationTest -->
+      <class name="linkedinTestCases.logInTest">
+        <methods>
+          <include name="Check_for_mandatory_fields"/>
+          <include name="Open_the_web_page"/>
+          <include name="Close_the_Site"/>
+        </methods>
+      </class> <!-- linkedinTestCases.logInTest -->
+      <class name="linkedinTestCases.ProfileTest">
+        <methods>
+          <include name="Open_the_web_page"/>
+          <include name="Verfiy_User_can_add_work_experience" invocation-numbers="0"/>
+          <include name="Close_the_Site"/>
+        </methods>
+      </class> <!-- linkedinTestCases.ProfileTest -->
+      <class name="linkedinTestCases.ForgotPasswordTest">
+        <methods>
+          <include name="Open_the_web_page"/>
+          <include name="Verfiy_the_system_keep_the_email" invocation-numbers="0"/>
+          <include name="Close_the_Site"/>
+        </methods>
+      </class> <!-- linkedinTestCases.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

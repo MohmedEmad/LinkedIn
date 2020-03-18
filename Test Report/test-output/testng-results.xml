@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="8" total="31" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="115184" started-at="2018-07-01T19:20:30Z" finished-at="2018-07-01T19:22:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="115184" started-at="2018-07-01T19:20:30Z" finished-at="2018-07-01T19:22:25Z">
+      <class name="linkedinTestCases.TestBase">
+        <test-method status="PASS" signature="Open_the_web_page()[pri:0, instance:linkedinTestCases.TestBase@5c3bd550]" name="Open_the_web_page" is-config="true" duration-ms="7175" started-at="2018-07-01T19:20:30Z" finished-at="2018-07-01T19:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_the_web_page -->
+        <test-method status="PASS" signature="Close_the_Site()[pri:0, instance:linkedinTestCases.TestBase@5c3bd550]" name="Close_the_Site" is-config="true" duration-ms="0" started-at="2018-07-01T19:22:25Z" finished-at="2018-07-01T19:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_the_Site -->
+      </class> <!-- linkedinTestCases.TestBase -->
+      <class name="linkedinTestCases.logInTest">
+        <test-method status="FAIL" signature="Check_for_mandatory_fields()[pri:0, instance:linkedinTestCases.logInTest@91161c7]" name="Check_for_mandatory_fields" duration-ms="1360" started-at="2018-07-01T19:20:37Z" finished-at="2018-07-01T19:20:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter a valid email address] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter a valid email address] but found [null]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at linkedinTestCases.logInTest.Check_for_mandatory_fields(logInTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_mandatory_fields -->
+        <test-method status="PASS" signature="login_with_invalid_data(java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.logInTest@91161c7]" name="login_with_invalid_data" duration-ms="2072" started-at="2018-07-01T19:20:39Z" data-provider="loginInvalidData" finished-at="2018-07-01T19:20:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_invalid_data -->
+        <test-method status="PASS" signature="login_with_valid_data(java.lang.String, java.lang.String)[pri:1, instance:linkedinTestCases.logInTest@91161c7]" name="login_with_valid_data" duration-ms="12925" started-at="2018-07-01T19:21:41Z" data-provider="loginData" finished-at="2018-07-01T19:21:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mf069886.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[m1a2i3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_valid_data -->
+      </class> <!-- linkedinTestCases.logInTest -->
+      <class name="linkedinTestCases.RegistrationTest">
+        <test-method status="PASS" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2966" started-at="2018-07-01T19:20:41Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3@@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="PASS" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2875" started-at="2018-07-01T19:20:44Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1…]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="FAIL" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2961" started-at="2018-07-01T19:20:47Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1n@-domain.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter a valid email address] but found [Password must be 6 characters or more]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter a valid email address] but found [Password must be 6 characters or more]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at linkedinTestCases.RegistrationTest.Check_for_invalid_emails(RegistrationTest.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="PASS" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2961" started-at="2018-07-01T19:20:50Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@111.222.333.44444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="PASS" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2928" started-at="2018-07-01T19:20:53Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1l@domain..com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="PASS" signature="Check_for_invalid_emails(java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_emails" duration-ms="2898" started-at="2018-07-01T19:20:56Z" data-provider="userRegisterWithInvalidEmail" finished-at="2018-07-01T19:20:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1.email.domain.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_emails -->
+        <test-method status="PASS" signature="Check_for_invalid_password(java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_password" duration-ms="2929" started-at="2018-07-01T19:20:59Z" data-provider="userRegisterWithInvalidPassword" finished-at="2018-07-01T19:21:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1d23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password must be 6 characters or more]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_password -->
+        <test-method status="PASS" signature="Check_for_invalid_password(java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_for_invalid_password" duration-ms="2877" started-at="2018-07-01T19:21:02Z" data-provider="userRegisterWithInvalidPassword" finished-at="2018-07-01T19:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaaaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Please enter a more secure password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_for_invalid_password -->
+        <test-method status="PASS" signature="Check_mandatory_fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_mandatory_fields" duration-ms="2844" started-at="2018-07-01T19:21:05Z" data-provider="RegisterWithInvalidData" finished-at="2018-07-01T19:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@123.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sd4e7rr4d1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Please enter your first name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_mandatory_fields -->
+        <test-method status="PASS" signature="Check_mandatory_fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_mandatory_fields" duration-ms="2862" started-at="2018-07-01T19:21:08Z" data-provider="RegisterWithInvalidData" finished-at="2018-07-01T19:21:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@123.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sd4e7rr4d1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Please enter your last name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_mandatory_fields -->
+        <test-method status="PASS" signature="Check_mandatory_fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_mandatory_fields" duration-ms="2874" started-at="2018-07-01T19:21:11Z" data-provider="RegisterWithInvalidData" finished-at="2018-07-01T19:21:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sd4e7rr4d1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Please enter your email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_mandatory_fields -->
+        <test-method status="PASS" signature="Check_mandatory_fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="Check_mandatory_fields" duration-ms="2803" started-at="2018-07-01T19:21:13Z" data-provider="RegisterWithInvalidData" finished-at="2018-07-01T19:21:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@123.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Please enter your password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_mandatory_fields -->
+        <test-method status="FAIL" signature="UserCanRegisterSuccssfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.RegistrationTest@604ed9f0]" name="UserCanRegisterSuccssfully" duration-ms="3882" started-at="2018-07-01T19:21:16Z" data-provider="userRegisterData" finished-at="2018-07-01T19:21:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[marwa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fathy]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[m.f0145@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1.2345678E7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eg]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[01126184667]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //*[@id="cp-challenge-form-page1"]/fieldset/ul/li[1]/div/label[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAI-FATHY', ip: '10.10.106.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//*[@id="cp-challenge-form-page1"]/fieldset/ul/li[1]/div/label[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id="cp-challenge-form-page1"]/fieldset/ul/li[1]/div/label[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAI-FATHY', ip: '10.10.106.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//*[@id="cp-challenge-form-page1"]/fieldset/ul/li[1]/div/label[1]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at linkedinPages.HomePage.EnterSecurityData(HomePage.java:42)
+at linkedinTestCases.RegistrationTest.UserCanRegisterSuccssfully(RegistrationTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegisterSuccssfully -->
+      </class> <!-- linkedinTestCases.RegistrationTest -->
+      <class name="linkedinTestCases.ProfileTest">
+        <test-method status="PASS" signature="login_with_valid_data(java.lang.String, java.lang.String)[pri:1, instance:linkedinTestCases.ProfileTest@6a4f787b]" name="login_with_valid_data" duration-ms="8928" started-at="2018-07-01T19:21:54Z" data-provider="loginData" finished-at="2018-07-01T19:22:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mf069886.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[m1a2i3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_valid_data -->
+        <test-method status="FAIL" signature="Verfiy_User_can_add_work_experience(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:linkedinTestCases.ProfileTest@6a4f787b]" name="Verfiy_User_can_add_work_experience" duration-ms="22219" started-at="2018-07-01T19:22:03Z" data-provider="WorkExperience_Data" finished-at="2018-07-01T19:22:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Title for test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Company name for test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[companylocation for test]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2017]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[avatar-blank.jpg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //div[@class='pe-form-footer__actions pe-form-footer__actions--treasury-edit']//div//button[@data-control-name='apply']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAI-FATHY', ip: '10.10.106.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//div[@class='pe-form-footer__actions pe-form-footer__actions--treasury-edit']//div//button[@data-control-name='apply']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='pe-form-footer__actions pe-form-footer__actions--treasury-edit']//div//button[@data-control-name='apply']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAI-FATHY', ip: '10.10.106.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22588, moz:profile: C:\Users\mai.fathy\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 54fc14fd-1795-4407-b0c9-03a092193563
+*** Element info: {Using=xpath, value=//div[@class='pe-form-footer__actions pe-form-footer__actions--treasury-edit']//div//button[@data-control-name='apply']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at linkedinPages.ProfilePage.add_Work_experience(ProfilePage.java:42)
+at linkedinTestCases.ProfileTest.Verfiy_User_can_add_work_experience(ProfileTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_User_can_add_work_experience -->
+      </class> <!-- linkedinTestCases.ProfileTest -->
+      <class name="linkedinTestCases.ForgotPasswordTest">
+        <test-method status="PASS" signature="Verfiy_the_system_display_MSG_For_invalid(java.lang.String)[pri:0, instance:linkedinTestCases.ForgotPasswordTest@685cb137]" name="Verfiy_the_system_display_MSG_For_invalid" duration-ms="5221" started-at="2018-07-01T19:21:20Z" data-provider="InvalidData" finished-at="2018-07-01T19:21:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_the_system_display_MSG_For_invalid -->
+        <test-method status="PASS" signature="Verfiy_the_system_display_MSG_For_invalid(java.lang.String)[pri:0, instance:linkedinTestCases.ForgotPasswordTest@685cb137]" name="Verfiy_the_system_display_MSG_For_invalid" duration-ms="5199" started-at="2018-07-01T19:21:25Z" data-provider="InvalidData" finished-at="2018-07-01T19:21:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mai.gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_the_system_display_MSG_For_invalid -->
+        <test-method status="FAIL" signature="Verfiy_the_system_keep_the_email(java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.ForgotPasswordTest@685cb137]" name="Verfiy_the_system_keep_the_email" duration-ms="2653" started-at="2018-07-01T19:21:31Z" data-provider="emailList" finished-at="2018-07-01T19:21:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mf069886.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[m1a2i3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [mf069886.test@gmail.com] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [mf069886.test@gmail.com] but found []
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at linkedinTestCases.ForgotPasswordTest.Verfiy_the_system_keep_the_email(ForgotPasswordTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_the_system_keep_the_email -->
+        <test-method status="PASS" signature="Verfiy_the_system_send_email_For_user(java.lang.String, java.lang.String)[pri:0, instance:linkedinTestCases.ForgotPasswordTest@685cb137]" name="Verfiy_the_system_send_email_For_user" duration-ms="6035" started-at="2018-07-01T19:21:33Z" data-provider="emailList" finished-at="2018-07-01T19:21:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mf069886.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[m1a2i3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_the_system_send_email_For_user -->
+        <test-method status="PASS" signature="Verfiy_the_user_can_open_forgetpassPage()[pri:0, instance:linkedinTestCases.ForgotPasswordTest@685cb137]" name="Verfiy_the_user_can_open_forgetpassPage" duration-ms="1888" started-at="2018-07-01T19:21:39Z" finished-at="2018-07-01T19:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verfiy_the_user_can_open_forgetpassPage -->
+      </class> <!-- linkedinTestCases.ForgotPasswordTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

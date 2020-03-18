@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="Automation_task_AFIT.linkedin.test.RegistrationPageTest"/>
+      <class name="Automation_task_AFIT.linkedin.test.ForgotPasswordTest"/>
+      <class name="Automation_task_AFIT.linkedin.test.logInTest"/>
+      <class name="Automation_task_AFIT.linkedin.test.ProfileTest"/>
+     </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
